@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ssmgrxcglxthsg7654X1B6:Web exploded">
+    <output-path>$PROJECT_DIR$/classes/artifacts/ssmgrxcglxthsg7654X1B6_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="ssmgrxcglxthsg7654X1B6/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="javaee-facet-classes" facet="ssmgrxcglxthsg7654X1B6/web/Web" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="jxl" />
+          <element id="library" level="module" name="javax.servlet.jsp.jstl.jar" module-name="ssmgrxcglxthsg7654X1B6" />
+          <element id="library" level="module" name="jstl-impl.jar" module-name="ssmgrxcglxthsg7654X1B6" />
+          <element id="library" level="project" name="org.springframework.aop-3.1.1.RELEASE" />
+          <element id="library" level="project" name="json-lib-2.4-jdk15" />
+          <element id="library" level="project" name="lib" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
