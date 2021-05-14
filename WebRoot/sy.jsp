@@ -65,7 +65,7 @@ out.print(result);%></TD>
     <TR   align=middle 
   bgColor=#ffffff>
       <TD width="10%" align="left" >系统作者：</TD>
-      <TD width="41%"  align="left" ><font class="t4">xxxxxx</font></TD>
+      <TD width="41%"  align="left" ><font class="t4">王靖、薛俊明、王斯未、郭浩天、程显达</font></TD>
     </TR>
     <TR   align=middle 
   bgColor=#ffffff>
