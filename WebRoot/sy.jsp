@@ -70,12 +70,12 @@ out.print(result);%></TD>
     <TR   align=middle 
   bgColor=#ffffff>
       <TD align="left"  >指导老师：</TD>
-      <TD  align="left" >xxxxxxx</TD>
+      <TD  align="left" >王俊</TD>
     </TR>
     <TR   align=middle 
   bgColor=#ffffff>
       <TD align="left"  >联系方式：</TD>
-      <TD  align="left" ><font class="t41">xxxxxxxxxxxxxxx</font></TD>
+      <TD  align="left" ><font class="t41">localhost:3307</font></TD>
     </TR>
   </TBODY>
 </TABLE>
