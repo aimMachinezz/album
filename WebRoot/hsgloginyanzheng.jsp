@@ -1,5 +1,6 @@
 ﻿<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%@ page language="java" import="java.sql.*" %>
+<%@ page import="com.util.MD5Util" %>
 <jsp:useBean id="connDbBean" scope="page" class="com.util.db"/>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
@@ -13,10 +14,11 @@
  
  String uid=request.getParameter("username");
  String pwd=request.getParameter("pwd");
+ MD5Util md5=new MD5Util();
  String cx=request.getParameter("cx");
  String sql="";
  if(cx.equals("管理员")){sql="select * from allusers where username='"+uid+"' and pwd='"+pwd+"'";}
- if(cx.equals("注册用户")){sql="select * from zhuceyonghu where yonghuming='"+uid+"' and mima='"+pwd+"' and issh='是'";}
+ if(cx.equals("注册用户")){sql="select * from zhuceyonghu where yonghuming='"+uid+"' and mima='"+md5.md5(pwd)+"' and issh='是'";}
 
  ResultSet RS_result=connDbBean.executeQuery(sql);
  if(!RS_result.next())

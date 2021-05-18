@@ -9,35 +9,36 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-<!-- 设置springmvc控制器 -->
+
+  <!-- 设置springmvc控制器 -->
   <servlet>
-  <servlet-name>sMvc</servlet-name>
-  <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-  <init-param>
-  <param-name >contextConfigLocation</param-name>
-  <param-value>classpath:springMVC-config.xml</param-value>
-  </init-param>
-  <load-on-startup>1</load-on-startup>
+    <servlet-name>sMvc</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <param-name >contextConfigLocation</param-name>
+      <param-value>classpath:springMVC-config.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
-  <servlet-name>sMvc</servlet-name>
-  <url-pattern>*.do</url-pattern>
-  
+    <servlet-name>sMvc</servlet-name>
+    <url-pattern>*.do</url-pattern>
+
   </servlet-mapping>
   <filter>
-  <filter-name>springencoding</filter-name>
-  <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
-  <init-param>
-  <param-name>encoding</param-name>
-  <param-value>utf-8</param-value>
-  </init-param>
+    <filter-name>springencoding</filter-name>
+    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>utf-8</param-value>
+    </init-param>
   </filter>
   <filter-mapping>
-  
-  <filter-name>springencoding</filter-name>
-  <url-pattern>/*</url-pattern>
+
+    <filter-name>springencoding</filter-name>
+    <url-pattern>/*</url-pattern>
   </filter-mapping>
-  
+
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
@@ -45,4 +46,7 @@
     <param-name>contextConfigLocation</param-name>
     <param-value>classpath:applicationContext.xml</param-value>
   </context-param>
+  <session-config>
+    <session-timeout>10</session-timeout>
+  </session-config>
 </web-app>

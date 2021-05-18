@@ -192,8 +192,7 @@ public class AllusersController {
         Map<String, Object> u = new HashMap<String, Object>();
         System.out.println("name===" + allusers.getUsername());
         u.put("username", allusers.getUsername());
-        //u.put("utype", "用户");
-        //Md5.MD5HexEncode(user.getPassword())
+
         u.put("pwd", allusers.getPwd());
         allusers = allusersService.allusersLogin(u);
         if (allusers != null) {

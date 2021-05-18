@@ -40,9 +40,9 @@
 			document.f11.pagerandom.focus();
 			return false;
 	}
-	
+
 	}
-	</script>     
+	</script>
 
 <body>
 
@@ -61,9 +61,7 @@
 			</div>
 		  <div class="lgD">权限:&nbsp;&nbsp;<select name="cx" id="cx" style="width:170px; height:40px;">
             <option value="管理员">管理员</option>
-<!--<option value="注册用户">注册用户</option>
-<option value="注册用户">注册用户</option>
--->
+
           </select></div>
 		  <div class="lgD">
 				<img class="img1" src="images/logPwd.png" /><input type="text" placeholder="验证码" name="pagerandom" id="pagerandom" style="width:100px; height:35px;" /><%
@@ -73,14 +71,14 @@
 			</div>
 			<div class="logC">
 				<input type="submit" name="Submit" value="登录" onClick="return hsgchecklogin();" style="width:320px; height:40px;">
-				
+
 			</div>
 			 </form>
 		</div>
 </div>
 	<div class="logFoot">
 		<p class="p1">版权所有：个人相册管理系统</p>
-		
+
 	</div>
 </body>
 </html>

@@ -3,8 +3,13 @@
 <%
 if((String)request.getSession().getAttribute("username")==null || (String)request.getSession().getAttribute("username")=="")
 {
-	out.print("<script>javascript:alert('对不起，您已超时或未登陆,请在IE中重新打开登陆！');window.close();</script>");
-	out.close();
+	/*out.print("<script>javascript:alert('对不起，您已超时或未登陆,请在IE中重新打开登陆！'); " +
+            "window.location.href = 'default.jsp';</script>");
+	out.close();*/
+  out.println("<SCRIPT LANGUAGE='JavaScript'>");
+  out.println("alert('对不起，您已超时或未登陆,请在IE中重新打开登陆！！')");
+  out.println("document.location.href=\"/ssmgrxcglxthsg7654X1B6_Web_exploded/index.do\"");
+  out.println("</script>");
 }
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
